@@ -1,5 +1,5 @@
 var ECommerceGrid = (function () {
-    function ECommerceGrid() {
+    function ECommerceGrid(options) {
     }
     return ECommerceGrid;
 }());
