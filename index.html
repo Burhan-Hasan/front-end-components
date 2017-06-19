@@ -3,24 +3,113 @@
 <head>
     <script src="scripts/component-ecommerce-grid.js"></script>
     <style>
-        .component-ecommerce-grid{
-            outline: 1px solid red;
+        .component-ecommerce-grid {
+            border: 1px solid #ccc;
             width: 800px;
-            height: 400px;
+            border-collapse: collapse;
+        }
+        .component-ecommerce-grid tbody{
+            overflow-y: scroll;
+            height: 300px;
+        }
+        .component-ecommerce-grid td,th{
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        .component-ecommerce-grid td{
         }
     </style>
 </head>
 
 <body>
-        <table class="component-ecommerce-grid">
-            <thead>
-                <tr>
-                    <td>#</td>
-                    <td>Item</td>
-                    <td>Price</td>
-                </tr>
-            </thead>
-        </table>
+    <table class="component-ecommerce-grid">
+        <thead>
+            <tr>
+                <th width="50">#</th>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span class="icon-cancel-circled2">x</span>
+                </td>
+                <td>Nubia Z11</td>
+                <td>3501</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nubia Z11</td>
+                <td>3502</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nubia Z11</td>
+                <td>3503</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Nubia Z11</td>
+                <td>3504</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Nubia Z11</td>
+                <td>3505</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Nubia Z11</td>
+                <td>3506</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Nubia Z11</td>
+                <td>3507</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Nubia Z11</td>
+                <td>3508</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Nubia Z11</td>
+                <td>3509</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Nubia Z11</td>
+                <td>35010</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Nubia Z11</td>
+                <td>35011</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Nubia Z11</td>
+                <td>35012</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Nubia Z11</td>
+                <td>35013</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Nubia Z11</td>
+                <td>35014</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Nubia Z11</td>
+                <td>35015</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>
