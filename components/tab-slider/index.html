@@ -1,12 +1,78 @@
 <html>
 
 <head>
-    <script src="./tab-slider.js"></script>
-    <link rel="stylesheet" href="./tab-slider.css">
+    <script src="../builds/js/tab-slider/tab-slider.js"></script>
+    <style>
+        #wrapp {
+            width: 800px;
+            height: 350px;
+            margin: 60px auto;
+            outline: 1px solid red;
+        }
+
+        .tab-slider .__header {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .tab-slider .__header::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .tab-slider .__header li {
+            float: left;
+            padding: 5px 10px;
+            outline: 1px solid #ccc;
+            font: 16px Arial;
+            cursor: pointer;
+        }
+
+        .tab-slider .__content>div {
+            display: none;
+        }
+
+        .tab-slider .__content>div[active] {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-    
+    <div id="wrapp">
+        <div class="tab-slider">
+            <ul class="__header">
+                <li tab-for="content-main" class="tab-button">
+                    Main
+                </li>
+                <li tab-for="content-seo" class="tab-button">
+                    SEO
+                </li>
+                <li tab-for="content-images" class="tab-button">
+                    Images
+                </li>
+            </ul>
+            <div class="__content">
+                <div id="content-main" active>
+                    Main Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum veritatis vel eius iste consequuntur ab corporis, eos
+                    maiores facere tempore fuga deleniti quis incidunt nihil suscipit aliquid laborum nemo enim!
+                </div>
+                <div id="content-seo">
+                    SEO Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quam distinctio facere iste laboriosam sequi, culpa maiores
+                    libero error quisquam, dolores ipsa ex minima non. Corrupti natus laboriosam explicabo facere!
+                </div>
+                <div id="content-images">
+                    Images Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, architecto! Maxime, amet sint obcaecati vero illum,
+                    mollitia vitae placeat blanditiis culpa neque nam reprehenderit optio totam quo dolores unde impedit.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        new tabSlider({ container: document.getElementsByClassName('tab-slider')[0] });
+    </script>
 </body>
 
 </html>
