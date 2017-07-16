@@ -1,7 +1,0 @@
-class ECommerceGrid
-{
-    constructor(options)
-    {
-        
-    }
-}
