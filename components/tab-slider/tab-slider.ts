@@ -1,6 +1,6 @@
 class tabSlider {
     /**
-     *
+     *Tab slider (Vanilla js)
      */
     constructor({ container }) {
         this.initEvents(container);
@@ -9,8 +9,6 @@ class tabSlider {
     initEvents(container) {
         container.onclick = this.tabClick;
     }
-
-
     //EVENTS
     tabClick(e) {
         let target = e.target;
