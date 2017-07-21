@@ -71,7 +71,9 @@
         </div>
     </div>
     <script>
-        new tabSlider({ container: document.getElementsByClassName('tab-slider')[0] });
+        window.onload = function () {
+            new tabSlider({ container: document.getElementsByClassName('tab-slider')[0] });
+        }
     </script>
 </body>
 
