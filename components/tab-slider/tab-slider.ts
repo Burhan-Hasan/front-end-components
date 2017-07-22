@@ -14,6 +14,7 @@ class tabSlider {
         let target = e.target;
         let tabBtn = target.closest('.tab-button');
         if (tabBtn) {
+            //tabBtn.setAttribute('active');
             let tabFor = tabBtn.getAttribute('tab-for');
             let content = document.getElementById(tabFor);
             let contents = content.parentElement.children;
